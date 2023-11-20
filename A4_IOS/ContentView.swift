@@ -6,16 +6,15 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
+        
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView(content: {
+            NavigationLink(destination: Text("Destination")) { /*@START_MENU_TOKEN@*/Text("Navigate")/*@END_MENU_TOKEN@*/ }
+        })
+        
     }
 }
 

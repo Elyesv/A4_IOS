@@ -11,6 +11,8 @@
 		26227F792B0B6C040056A556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F782B0B6C040056A556 /* ContentView.swift */; };
 		26227F7B2B0B6C050056A556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26227F7A2B0B6C050056A556 /* Assets.xcassets */; };
 		26227F7E2B0B6C050056A556 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26227F7D2B0B6C050056A556 /* Preview Assets.xcassets */; };
+		26227F872B0BAA440056A556 /* NewDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F862B0BAA440056A556 /* NewDataScreen.swift */; };
+		26227F892B0BAABB0056A556 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F882B0BAABB0056A556 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		26227F782B0B6C040056A556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		26227F7A2B0B6C050056A556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26227F7D2B0B6C050056A556 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26227F862B0BAA440056A556 /* NewDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataScreen.swift; sourceTree = "<group>"; };
+		26227F882B0BAABB0056A556 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +55,9 @@
 		26227F752B0B6C040056A556 /* A4_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				26227F862B0BAA440056A556 /* NewDataScreen.swift */,
 				26227F762B0B6C040056A556 /* A4_IOSApp.swift */,
+				26227F882B0BAABB0056A556 /* Data.swift */,
 				26227F782B0B6C040056A556 /* ContentView.swift */,
 				26227F7A2B0B6C050056A556 /* Assets.xcassets */,
 				26227F7C2B0B6C050056A556 /* Preview Content */,
@@ -139,6 +145,8 @@
 			files = (
 				26227F792B0B6C040056A556 /* ContentView.swift in Sources */,
 				26227F772B0B6C040056A556 /* A4_IOSApp.swift in Sources */,
+				26227F872B0BAA440056A556 /* NewDataScreen.swift in Sources */,
+				26227F892B0BAABB0056A556 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
