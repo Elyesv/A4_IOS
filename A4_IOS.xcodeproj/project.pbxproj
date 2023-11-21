@@ -13,6 +13,9 @@
 		26227F7E2B0B6C050056A556 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26227F7D2B0B6C050056A556 /* Preview Assets.xcassets */; };
 		26227F872B0BAA440056A556 /* NewDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F862B0BAA440056A556 /* NewDataScreen.swift */; };
 		26227F892B0BAABB0056A556 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F882B0BAABB0056A556 /* Data.swift */; };
+		26227F8B2B0CA5B70056A556 /* DataDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F8A2B0CA5B70056A556 /* DataDetailScreen.swift */; };
+		26227F8E2B0CDDC10056A556 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26227F8D2B0CDDC10056A556 /* SwipeCellKit */; };
+		26227F922B0CE49A0056A556 /* EditDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F912B0CE49A0056A556 /* EditDataScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,8 @@
 		26227F7D2B0B6C050056A556 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		26227F862B0BAA440056A556 /* NewDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDataScreen.swift; sourceTree = "<group>"; };
 		26227F882B0BAABB0056A556 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		26227F8A2B0CA5B70056A556 /* DataDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetailScreen.swift; sourceTree = "<group>"; };
+		26227F912B0CE49A0056A556 /* EditDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26227F8E2B0CDDC10056A556 /* SwipeCellKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +61,12 @@
 		26227F752B0B6C040056A556 /* A4_IOS */ = {
 			isa = PBXGroup;
 			children = (
-				26227F862B0BAA440056A556 /* NewDataScreen.swift */,
+				26227F782B0B6C040056A556 /* ContentView.swift */,
 				26227F762B0B6C040056A556 /* A4_IOSApp.swift */,
 				26227F882B0BAABB0056A556 /* Data.swift */,
-				26227F782B0B6C040056A556 /* ContentView.swift */,
+				26227F8A2B0CA5B70056A556 /* DataDetailScreen.swift */,
+				26227F862B0BAA440056A556 /* NewDataScreen.swift */,
+				26227F912B0CE49A0056A556 /* EditDataScreen.swift */,
 				26227F7A2B0B6C050056A556 /* Assets.xcassets */,
 				26227F7C2B0B6C050056A556 /* Preview Content */,
 			);
@@ -89,6 +97,9 @@
 			dependencies = (
 			);
 			name = A4_IOS;
+			packageProductDependencies = (
+				26227F8D2B0CDDC10056A556 /* SwipeCellKit */,
+			);
 			productName = A4_IOS;
 			productReference = 26227F732B0B6C040056A556 /* A4_IOS.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 26227F6A2B0B6C040056A556;
+			packageReferences = (
+				26227F8C2B0CDDC10056A556 /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+			);
 			productRefGroup = 26227F742B0B6C040056A556 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,6 +160,8 @@
 				26227F792B0B6C040056A556 /* ContentView.swift in Sources */,
 				26227F772B0B6C040056A556 /* A4_IOSApp.swift in Sources */,
 				26227F872B0BAA440056A556 /* NewDataScreen.swift in Sources */,
+				26227F922B0CE49A0056A556 /* EditDataScreen.swift in Sources */,
+				26227F8B2B0CA5B70056A556 /* DataDetailScreen.swift in Sources */,
 				26227F892B0BAABB0056A556 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		26227F8C2B0CDDC10056A556 /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		26227F8D2B0CDDC10056A556 /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 26227F8C2B0CDDC10056A556 /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 26227F6B2B0B6C040056A556 /* Project object */;
 }
