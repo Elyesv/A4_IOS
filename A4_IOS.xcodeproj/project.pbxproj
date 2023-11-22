@@ -16,6 +16,7 @@
 		26227F8B2B0CA5B70056A556 /* DataDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F8A2B0CA5B70056A556 /* DataDetailScreen.swift */; };
 		26227F8E2B0CDDC10056A556 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 26227F8D2B0CDDC10056A556 /* SwipeCellKit */; };
 		26227F922B0CE49A0056A556 /* EditDataScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F912B0CE49A0056A556 /* EditDataScreen.swift */; };
+		26227F942B0E073B0056A556 /* GetMeteo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26227F932B0E073B0056A556 /* GetMeteo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		26227F882B0BAABB0056A556 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		26227F8A2B0CA5B70056A556 /* DataDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDetailScreen.swift; sourceTree = "<group>"; };
 		26227F912B0CE49A0056A556 /* EditDataScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDataScreen.swift; sourceTree = "<group>"; };
+		26227F932B0E073B0056A556 /* GetMeteo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetMeteo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				26227F912B0CE49A0056A556 /* EditDataScreen.swift */,
 				26227F7A2B0B6C050056A556 /* Assets.xcassets */,
 				26227F7C2B0B6C050056A556 /* Preview Content */,
+				26227F932B0E073B0056A556 /* GetMeteo.swift */,
 			);
 			path = A4_IOS;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				26227F792B0B6C040056A556 /* ContentView.swift in Sources */,
 				26227F772B0B6C040056A556 /* A4_IOSApp.swift in Sources */,
+				26227F942B0E073B0056A556 /* GetMeteo.swift in Sources */,
 				26227F872B0BAA440056A556 /* NewDataScreen.swift in Sources */,
 				26227F922B0CE49A0056A556 /* EditDataScreen.swift in Sources */,
 				26227F8B2B0CA5B70056A556 /* DataDetailScreen.swift in Sources */,

@@ -14,6 +14,7 @@ struct ContentView: View {
     
     @State private var isSheetPresented = false
     
+    
     private func deleteRow(at offsets: IndexSet) {
         array.dataschemas.remove(atOffsets: offsets)
     }
@@ -41,24 +42,26 @@ struct ContentView: View {
             }
             .onDelete(perform: deleteRow)
                 
-           
         }
-            .navigationBarItems(trailing:
-                Button(action: {
-                    self.isSheetPresented = true
-                }) {
-                    Image(systemName: "plus.circle")
-                        .imageScale(.large)
-                }
-                .sheet(isPresented: $isSheetPresented) {
-                    NewDataScreen(onAddData: { newData in
-    
-                        self.array.dataschemas.append(newData)
-                    })
-                }
-            )
-            
-            .navigationBarTitle("Historique", displayMode: .inline)
+        .navigationBarItems(trailing:
+            Button(action: {
+                self.isSheetPresented = true
+            }) {
+                Image(systemName: "plus.circle")
+                    .imageScale(.large)
+            }
+            .sheet(isPresented: $isSheetPresented) {
+                NewDataScreen(onAddData: { newData in
+
+                    self.array.dataschemas.append(newData)
+                })
+            }
+        )
+        .navigationBarItems(trailing:
+            NavigationLink(destination: GetMeteo()) {
+            Image(systemName: "cloud.circle")
+        })
+        .navigationBarTitle("Historique", displayMode: .inline)
         }
     }
     
