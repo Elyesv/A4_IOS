@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 struct WeatherData: Codable {
+    var name: String?
     var weather: [Weather]
     var main: Main
     
@@ -13,6 +14,7 @@ struct WeatherData: Codable {
         var temp: Double
     }
 }
+
 
 struct GetMeteo: View {
     
